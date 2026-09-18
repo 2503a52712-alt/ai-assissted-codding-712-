@@ -1,0 +1,4 @@
+# Question 1: Zero-Shot Prompting (Palindrome Number Program)Prompt Used: "Write a Python function that checks whether a given number is a palindrome."AI-Generated Code:  
+def is_palindrome(n):
+    return str(n) == str(n)[::-1]
+# Task Analysis:  Testing:Input: 121 → Output: TrueInput: 10 → Output: FalseLogical Errors & Edge Cases: Because the prompt was zero-shot (no examples or constraints), the AI generated a basic string-reversal solution. While functional for positive integers, it fails on negative numbers (e.g., -121 evaluates to False because "-121" is not equal to "121-"). It also lacks input validation to prevent type errors if a non-numeric type is passed.  
